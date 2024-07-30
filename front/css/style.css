@@ -1,0 +1,102 @@
+.page-container {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url('../img/background.jpg');
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+.title h1 {
+    font-family: 'Righteous', cursive;
+    position: relative;
+    color: #ffffff; 
+    display: inline-block;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    font-size: 3em;
+    padding: 11px 60px;
+    margin: 0; 
+    line-height: 1;
+}
+.title h1:before, .title h1:after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    background: repeating-linear-gradient(180deg, transparent, transparent 2px, #ffffff 2px, #ffffff 4px);
+}
+.title h1:before {left: 0;}
+.title h1:after {right: 0;}
+
+.picture-of-a-day {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 1000px;
+    padding: 5px;
+    background-color: #6d6a6a;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+.picture-of-a-day img {
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+.picture-of-a-day .pod-title {
+    font-size: 36px;
+    text-align: center;
+}
+
+.picture-of-a-day .pod-explanation {
+    font-size: 20px;
+}
+.datepicker {
+    margin: 50px auto;
+    display: block;
+}
+
+.page-main{
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.nasa-layout{
+    width: 800px;
+    display: block;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+.nasa-image{
+    width: 100%;
+}
+
+.nasa-title{
+    display: block;
+    font-size: 40px;
+    margin: 50px 0;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.counter {
+    position: fixed;
+    color: white;
+    border: 2px solid #FFFFFF;
+    top: 20px;
+    right: 40px;
+    padding: 15px;
+}
